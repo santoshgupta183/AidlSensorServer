@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.santosh.sensor_service">
+
+    <application>
+        <service
+            android:name=".SensorService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.santosh.sensor_service.CONNECT_SENSOR_SERVICE"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
